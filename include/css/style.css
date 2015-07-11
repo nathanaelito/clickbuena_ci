@@ -1,0 +1,2194 @@
+@font-face {
+    font-family: 'Conv_Androgyne_TB';
+    src: url('../fonts/androgyne_tb-webfont.eot');
+    src: url('../fonts/androgyne_tb-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/androgyne_tb-webfont.woff2') format('woff2'),
+         url('../fonts/androgyne_tb-webfont.woff') format('woff'),
+         url('../fonts/androgyne_tb-webfont.ttf') format('truetype'),
+         url('../fonts/androgyne_tb-webfont.svg#androgyneregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'shadows_into_light_tworegular';
+    src: url('../fonts/shadowsintolighttwo-regular-webfont.eot');
+    src: url('../fonts/shadowsintolighttwo-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/shadowsintolighttwo-regular-webfont.woff2') format('woff2'),
+         url('../fonts/shadowsintolighttwo-regular-webfont.woff') format('woff'),
+         url('../fonts/shadowsintolighttwo-regular-webfont.ttf') format('truetype'),
+         url('../fonts/shadowsintolighttwo-regular-webfont.svg#shadows_into_light_tworegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+	margin:0px;
+	padding: 0px;
+	width: 100%;
+	height: auto;
+	min-width: 320px;
+	background: #002a84;
+	color: #ffffff;
+	font-weight: normal;
+}
+:focus {
+  outline: none !important;
+}
+a{
+	color: #3FC6F4;
+	text-decoration: none;
+}
+a img{
+	border: 0;
+}
+input[disabled="disabled"]{
+	-webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+    filter: gray; /* IE 6-9 */
+}
+input, textarea, select{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+label{
+	font-weight: normal;
+}
+
+.form-group{
+	margin-bottom: 10px;
+}
+.alert-custom{
+	font-family: 'shadows_into_light_tworegular';
+	font-size: 25px;
+	color: #ffffff;
+	text-shadow: -1px 0px 6px #03254C;
+	text-align: center;
+}
+.alert-custom a{
+	color: #ffb400;
+	text-decoration: underline;
+}
+.alert-custom a:hover{
+	color: #ffb400;
+}
+.hr-custom {
+    background: url("../img/linea_punteada.png") repeat-x scroll 0 0 transparent;
+    border: 0 none;
+    height: 7px;
+}
+#header {
+    height: 53px;
+}
+
+#logo{
+	display: block;
+    height: auto;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 400px;
+    z-index: 999;
+}
+
+#logo img{
+	width: 100%;
+}
+
+.navbar-header{
+	position: relative;
+}
+
+.navbar-default{
+	background: url(../img/header_menu.png);
+	background-repeat: repeat-x;
+	border: 0;
+	color: #ffffff;
+	height: 53px;
+	z-index: 999;
+}
+
+.navbar-default .navbar-nav > li > a{
+	color: #ffffff;
+	line-height: 23px;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav  > a, .navbar-default .navbar-nav  > a:hover, .navbar-default .navbar-nav  > a:focus{
+	background: none;
+	color: #fd2711;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+	background: none;
+	color: #fd2711;
+}
+.navbar-collapse{
+	border: 0;
+}
+
+#main-menu-left{
+	
+}
+
+#main-menu-right{
+	font-family: 'Conv_Androgyne_TB';
+	font-size: 18px;
+    letter-spacing: 0.03em;
+	color: #ffffff;
+}
+
+.menu-dot{
+	font-family: Arial;
+	font-size: 31px;
+	line-height: 50px;
+	padding: 15px;
+}
+
+
+.carousel-control .glyphicon-chevron-right, .carousel-control .glyphicon-chevron-left{
+	display:block;
+	width:23px;
+	height:42px;
+}
+
+.carousel-control .glyphicon-chevron-right:before {
+   content: " ";
+   display:block;
+   background:url('../img/flecha_derecha.png') no-repeat;
+   width:23px;
+   height:41px;
+}
+
+.carousel-control .glyphicon-chevron-right:hover::before{
+	background-position: 0 -41px;
+}
+
+.carousel-control .glyphicon-chevron-left:before {
+   content: " ";
+   display:block;
+   background:url('../img/flecha_izquierda.png') no-repeat;
+   width:23px;
+   height:41px;
+}
+
+.carousel-control .glyphicon-chevron-left:hover::before{
+	background-position: 0 -41px;
+}
+
+.carousel-control .icon-prev, .carousel-control .icon-next, .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right{
+	margin-top: -21px;
+}
+
+.carousel-indicators{
+	bottom: 10px;
+}
+#carousel-banners{
+}
+#carousel-banners .item img{
+	width: 100%;
+}
+
+#content {
+    overflow: hidden;
+}
+
+#contenedor_superior{
+	background: url("../img/back_mantel.png") no-repeat scroll center bottom #002a84;
+	padding-bottom: 25px;
+}
+
+#division_superior{
+	background: url("../img/division_header.png") repeat-x;
+	width: 100%;
+	height: 16px;
+}
+
+#contenedor_medio{
+	background: url("../img/back_azul1.png") repeat scroll center bottom #002a84;
+}
+
+#division_media{
+	background: url("../img/linea_punteada.png") repeat-x scroll transparent;
+	width: 100%;
+	height: 7px;
+}
+
+#contenedor_inferior{
+	background: url("../img/back_azul2.png") repeat scroll center bottom #002a84;
+	padding-bottom: 50px;
+}
+
+.owl-prev, .owl-next{
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.owl-prev {
+    background: url("../img/flecha_izquierda.png") repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
+    height: 41px;
+    text-indent: 9999px;
+    width: 23px;
+}
+.owl-next {
+    background: url("../img/flecha_derecha.png") repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
+    height: 41px;
+    text-indent: 9999px;
+    width: 23px;
+}
+.owl-controls {
+    height: 37px;
+    position: absolute;
+    top: 50%;
+	margin-top: -21px !important;
+	width: 100%;
+	z-index: 1;
+}
+.owl-wrapper-outer{
+	z-index: 2;
+}
+.owl-prev {
+    left: -30px;
+    position: absolute;
+}
+.owl-next {
+    right: -30px;
+    position: absolute;
+}
+.owl-item {
+    margin: 20px 0;
+}
+
+.destacada{
+	text-align: center;
+}
+
+.destacada img{
+	height: 90%;
+    max-height: 188px;
+    max-width: 250px;
+    width: 90%;
+}
+
+.highlight_alert {
+    height: 80px;
+    position: relative;
+}
+
+.texto_destacadas{
+	display: block;
+	margin: 0 auto 60px auto;
+}
+
+#recetas_temporada{
+	position: relative;
+}
+
+#destacadas_carousel{
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.destacada_content{
+	font-family: 'shadows_into_light_tworegular';
+	text-align: center;
+	color: #ffffff;
+	font-size: 15px;
+	word-wrap: break-word;
+	word-break: normal;
+	hyphens: auto;
+	letter-spacing: 0.03em;
+	margin-top: 5px;
+}
+
+.ver_destacada, .ver_destacada a{
+	color: #FBCC05;
+	font-size: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.ver_destacada a{
+	text-decoration: underline;
+}
+
+.recetas_titulo_2{
+	font-family: 'Conv_Androgyne_TB';
+	text-shadow: -1px 0px 6px #03254C;
+	font-size: 24px;
+	color: #ffffff;
+	text-align: center;
+	letter-spacing: 0.03em;
+}
+.recetas_titulo_2 a{
+	color: #ffffff;
+	opacity: 0.4;
+}
+.recetas_titulo_2 a:hover, .recetas_titulo_2 a:active, .recetas_titulo_2 a:focus, .recetas_titulo_2 a.active{
+	text-decoration: none;
+	border-bottom: 3px solid #40c7f4;
+	opacity: 1;
+}
+
+#contenedor_medio #menu_temporada{
+	margin: 10px;
+}
+
+#contenedor_medio .cargar_highlight{
+	margin-left: 50px;
+}
+#contenedor_medio .cargar_favorites{
+	margin-right: 50px;
+}
+
+
+.margen_medio{
+	border-right: 1px solid #ffffff;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+
+#recetas_wrapper{
+	width: 100%;
+	min-height: 80px;
+	margin:0 auto;
+}
+
+#contenedor_inferior .recetas_titulo{
+	margin: 50px 0;
+}
+
+.recetas_titulo{
+	font-family: 'Conv_Androgyne_TB';
+	text-shadow: -1px 0px 6px #03254C;
+	font-size: 40px;
+	color: #ffffff;
+	text-align: center;
+	
+	
+}
+.receta_card{
+	margin-bottom:30px;
+	max-width: 330px;
+}
+.receta_card_inner{
+	background: url(../img/back_recetas.png) repeat #f8f2da;
+    border: 4px solid #71b5a8;
+    border-radius: 5px;
+    color: #a8a295;
+    font-size: 14px;
+    padding: 10px 10px 40px;
+    position: relative;
+    text-align: center;
+	min-height: 410px;
+}
+.receta_card_inner img {
+    max-width: 300px;
+    max-height: 225px;
+    width: 100%;
+	height: 100%;
+}
+.receta_card_img{
+	background: url(../img/fondo_mesa.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+.receta_card_link2{
+	display: block;
+}
+.receta_card_titulo{
+	color: #00448e;
+	font-size: 22px;
+	font-family: 'shadows_into_light_tworegular';
+	line-height: 22px;
+	word-wrap: break-word;
+	word-break: normal;
+	hyphens: auto;
+	margin-top: 10px;
+}
+
+.receta_card_link2:hover{
+	text-decoration: none;
+}
+
+.receta_card_link2:hover .receta_card_titulo{
+	color: #74b7aa;
+}
+
+.receta_card_descripcion{
+	color: #393939;
+	font-size: 13px;
+	font-family: Arial, Helvetica, sans-serif;
+	word-wrap: break-word;
+	word-break: normal;
+	hyphens: auto;
+}
+.ver_receta_card, .ver_receta_card a{
+	color: #00448e;
+	font-size: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.receta_card_controles{
+	bottom: 10px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+.receta_card_compartir{
+	bottom: 0;
+    left: 10px;
+    position: absolute;
+	background: url(../img/icon_facebook.png) no-repeat;
+	width: 30px;
+	height: 31px;
+	display: block;
+}
+.receta_card_compartir:hover{
+	background-position: 0 -31px;
+}
+
+.receta_card_like{
+	bottom: 0;
+	right:10px;
+	position: absolute;
+	background: url(../img/icon_corazon.png) no-repeat;
+	width: 27px;
+	height: 25px;
+	display: block;
+}
+
+.receta_card_like:hover, .receta_card_like.liked{
+	background-position: 0 -25px;
+}
+
+.ver_mas_content{
+	margin-bottom: 100px;
+}
+#ver_mas{
+	display: block;
+	margin: 0 auto;
+	font-size: 20px;
+	text-align: center;
+	width: 150px;
+	
+	font-family: 'Conv_Androgyne_TB';
+	text-shadow: -1px 0px 6px #03254C;
+	font-size: 20px;
+	color: #ffffff;
+	
+	
+}
+.ver_mas_img{
+	display: block;
+	width: 64px;
+	height: 65px;
+	background: url(../img/mas.png) no-repeat;
+	margin: 0 auto;
+}
+
+.ver_mas_img.loading{
+	background: url(../img/AjaxLoader.gif) no-repeat center center;
+}
+
+#ver_mas:hover{
+	text-decoration: none;
+}
+#ver_mas:hover .ver_mas_img{
+	background-position: 0 -68px;
+}
+
+.brands ul{
+	margin:0;
+	padding:0;
+}
+.brands li{
+	list-style: none;
+	text-align: center;
+	margin-top: 12px;
+}
+.legal{
+	text-align: center;
+}
+.legal a{
+	color: #ffffff;
+	text-decoration: none;
+}
+.legal a:hover{
+	color: #fd2711;
+}
+.copy_legal{
+	text-align: center;
+}
+.copy_come{
+	text-align: center;
+	margin: 20px 0 0;
+}
+#footer{
+	background: url(../img/pleca_footer.png) repeat-x;
+	padding-top: 15px;
+	min-height: 73px;
+	font-size: 11px;
+    line-height: 20px;
+}
+
+#photos_carousel .owl-item .item{
+	position: relative;
+	width: 90%;
+}
+
+.picture_thumb_a{
+	cursor:url(../img/lupa.cur), -moz-zoom-in;
+}
+
+#photos_carousel .picture_thumb_a, #photos_carousel .picture_thumb_a2, #photos_carousel #upload_picture_div{
+	border-radius: 15px;
+	border: 3px solid #72B8AA;
+	background: white;
+	overflow: hidden;
+	display: block;
+}
+
+#photos_carousel .picture_ribbon{
+	position: absolute;
+    right: -7px;
+    top: -5px;
+    width: 81px;
+}
+
+#upload_picture_div{
+	width: 90%;
+	position:relative;
+}
+
+#upload_picture_div .upload_picture_img{
+	width: 100%;
+}
+
+#upload_picture_div input{
+	filter: alpha(opacity=0);
+	opacity: 0;
+	width: 100% !important;
+	height: 100%;
+	position: absolute;
+	top:0;
+	left:0;
+	cursor: pointer;
+	z-index:2;
+	
+	text-indent: -999;
+	overflow: hidden;
+}
+
+#upload_picture_div .loading{
+	display: none;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+#upload_picture_div .loading img{
+	display: block;
+	width: 32px;
+	height: 32px;
+	margin: auto;
+	position: absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+}
+
+.progress_upload{
+    bottom: 0;
+    display: none;
+    height: 100%;
+    left: 0;
+    opacity: 0.7;
+    position: absolute;
+    width: 100%;
+}
+.progressbar{
+	background: none repeat scroll 0 0 green;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+	width:0;
+}
+
+.picture_modal_src{
+	display: block;
+	margin: 0 auto;
+	max-width:100%;
+	max-height: 100%;
+	width: 100%;
+}
+
+.modal_picture_thumb{
+	min-height: 300px;
+	width: 800px;
+	margin-left: -400px;
+	background: #f7f2d9;
+}
+
+.modal_ingreso, .modal_registro, .modal_recuperar, .modal_terminos, .modal_privacidad{
+	background: url("../img/back_azul2.png") repeat scroll center bottom #002a84;
+	border: 3px solid #ffffff;
+	border-radius: 20px;
+	width: 800px;
+	min-width: 300px;
+	
+	margin: auto;
+	position: absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	overflow: visible !important;
+	
+	
+}
+
+.modal_ingreso{
+	height: 450px;
+	margin: auto auto 80px auto;
+	max-width: 600px;
+}
+.modal_registro{
+	height: 610px;
+}
+.modal_recuperar{
+	height: 350px;
+}
+.modal_terminos{
+	height: 570px;
+}
+.modal_privacidad{
+	height: 570px;
+}
+.modal-header{
+	border: 0;
+}
+
+.modal_ingreso .conectate_facebook{
+	background: url(../img/conectate_fb.png) no-repeat;
+	width: 100%;
+	max-width: 225px;
+	height: 50px;
+	display: block;
+	border:0;
+	background-size: 100%;
+	margin: 0 auto;
+}
+
+.modal_ingreso .conectate_facebook:hover{
+	background-position: 0px -50px;
+}
+
+.modal_ingreso .btn_entrar{
+	margin: 20px auto;
+}
+
+.btn_entrar{
+	background: url(../img/btn_entrar.png) no-repeat transparent;
+	width: 150px;
+	height: 41px;
+	display: block;
+	border:0;
+	
+	max-width:100%;
+	background-size: 100%;
+}
+
+.btn_entrar:hover{
+	background-position: 0px -41px;
+}
+
+.modal_ingreso .modal_ingreso_titulo{
+	font-family: 'shadows_into_light_tworegular';
+	text-align: center;
+	color: #ffffff;
+	font-size: 22px;
+	letter-spacing: 0.03em;
+}
+
+.modal_ingreso .login_separador{
+	margin:10px auto;
+	width: 100%;
+	max-width: 214px;
+}
+
+.modal_ingreso .login_separador img{
+	width: 100%;
+}
+
+.modal_ingreso .form_user_login_div{
+	margin:0 auto;
+	max-width: 290px;
+}
+
+.modal_ingreso .form_user_login_ele{
+	max-width: 387px;
+	margin-left: -25%;
+}
+
+.modal_ingreso label{
+	font-family: 'shadows_into_light_tworegular';
+	text-align: center;
+	color: #ffffff;
+	font-size: 17px;
+	letter-spacing: 0.03em;
+}
+.modal_ingreso #inisesele{
+	position: absolute; 
+	bottom: 20px; 
+	right: 40px;
+	display: block;
+}
+.modal-close_x{
+	background-image: url("../img/btn_cierre.png");
+	width: 18px;
+	height: 18px;
+	opacity: 1;
+}
+.modal-close_x:hover{
+	background-position: 0px -18px;
+}
+
+.cont-close{
+	position: absolute;
+    right: -25px;
+    top: -25px;
+}
+
+.registrate_div{
+	position: absolute;
+    left: 0;
+    bottom: -60px;
+	
+	font-family: 'shadows_into_light_tworegular';
+	text-align: center;
+	font-size: 22px;
+	text-shadow: -1px 0px 6px #03254C;
+	color: #ffffff;
+	width: 100%;
+	
+	
+}
+
+.registrate_div p{
+	text-align: center;
+}
+
+.registrate_div a{
+	color: #fbcc05;
+	text-decoration: underline;
+}
+
+.no-margin{
+	margin: 0;
+}
+
+.pass_recovery{
+	display: block;
+    text-align: center;
+    width: 100%;
+	margin-top: 10px;
+	
+	color: #ffffff;
+	text-decoration: underline;
+	font-size: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.pass_recovery:hover{
+	color: #fbcc05;
+}
+
+.refresh_captcha{
+	background-image: url("../img/actualizar.png");
+	width: 28px;
+	height: 29px;
+	display: block;
+}
+
+.modal_registro .refresh_captcha{
+	float: left;
+	margin-left: 10px;
+}
+
+.modal_registro .captcha{
+	float: left;
+}
+
+.modal_registro .modal_registro_titulo{
+	font-family: 'Conv_Androgyne_TB';
+	font-size: 30px;
+	color: #ffffff;
+	text-align: center;
+}
+
+.modal_registro .modal_registro_titulo_2{
+	font-family: 'shadows_into_light_tworegular';
+	font-size: 20px;
+	color: #ffffff;
+	text-align: left;
+	letter-spacing: 0.03em;
+	margin: 0 50px;
+}
+
+.modal_registro label{
+	font-family: 'shadows_into_light_tworegular';
+	font-size: 17px;
+	letter-spacing: 0.03em;
+}
+
+label.label_arial{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.modal_registro label.label_arial{
+	font-size: 15px;
+}
+
+.modal_registro .modal_registro_titulo_2 p{
+	color: #ffffff;
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.modal_registro .btn_enviar{
+	float: right;
+}
+
+.modal_registro .privacidad_modal{
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+.modal-backdrop, .modal-backdrop.fade.in{
+	background: #000000;
+}
+
+.form_user_register_div{
+	margin: 20px 50px;
+}
+
+.form_user_recover_div{
+	margin: 20px 50px;
+	text-align: center;
+}
+
+.btn_enviar{
+	background: url("../img/btn_enviar.png") no-repeat transparent;
+	width: 150px;
+	height: 41px;
+	display: block;
+	border:0;
+}
+.btn_enviar:hover{
+	background-position: 0px -41px;
+}
+
+.recuperar_titulo{
+	font-family: 'Conv_Androgyne_TB';
+	text-shadow: -1px 0px 6px #03254C;
+	font-size: 30px;
+	color: #ffffff;
+	text-align: center;
+}
+
+.modal_recuperar{
+	max-width: 600px;
+}
+
+.modal_recuperar label{
+	font-family: 'shadows_into_light_tworegular';
+	font-size: 25px;
+	color: #ffffff;
+	letter-spacing: 0.03em;
+}
+
+.modal_recuperar .btn_enviar{
+	margin: 50px auto 0 auto;
+}
+
+.modal_terminos .modal_terminos_titulo {
+	font-family: 'Conv_Androgyne_TB';
+	text-shadow: -1px 0px 6px #03254C;
+	font-size: 30px;
+	color: #ffffff;
+	text-align: center;
+	
+	
+}
+
+.modal_terminos .modal-body {
+    max-height: 450px;
+    overflow: auto;
+}
+
+.modal_privacidad .modal_privacidad_titulo {
+	font-family: 'Conv_Androgyne_TB';
+	text-shadow: -1px 0px 6px #03254C;
+	font-size: 30px;
+	color: #ffffff;
+	text-align: center;
+}
+
+.modal_privacidad .modal-body {
+    max-height: 450px;
+    overflow: auto;
+}
+
+.alertify{
+	background: url("../img/back_azul2.png") repeat scroll center bottom #002a84;
+	border: 3px solid #ffffff;
+	border-radius: 20px;
+	min-width: 300px;
+	
+	color: #ffffff;
+	font-family: 'shadows_into_light_tworegular' !important;
+	font-size: 22px;
+    line-height: 32px;
+	
+	
+}
+
+.alertify-button-ok, .alertify-button-ok:hover, .alertify-button-ok:focus, .alertify-button-ok:active{
+    border-radius: 0;
+    box-shadow: 0;
+    font-weight: normal;
+    height: 41px;
+    margin-left: 10px;
+    padding: 4px 12px;
+    text-decoration: none;
+    width: 150px;
+	background: url(../img/btn_ok.png) no-repeat transparent;
+	border: 0;
+	text-shadow: none; 
+	
+	text-indent: -999px;
+	overflow: hidden;
+	
+	
+}
+
+.alertify-button-ok:hover, .alertify-button-ok:focus, .alertify-button-ok:active {
+   background-position: 0px -41px;
+}
+
+.alertify-button:focus {
+    box-shadow: none;
+	
+	
+}
+
+.alertify-buttons{
+	background: none !important;
+    border-radius: 0 !important;
+    border-top: 0 none !important;
+    padding: 14px 15px 15px;
+    text-align: center;
+	box-shadow: none !important;
+	
+	
+}
+
+.alertify-message{
+	text-align: center;
+}
+
+.alertify-cover{
+	background: #000000;
+	filter: alpha(opacity=0.5);
+	opacity: 0.5;
+}
+#content_recover{
+	background: url("../img/back_azul1.png") repeat scroll center bottom #002a84;
+}
+
+#recovery_content{
+	background: url("../img/back_azul2.png") repeat scroll center bottom #002a84;
+	border: 3px solid #ffffff;
+	border-radius: 20px;
+	min-width: 300px;
+	
+	color: #ffffff;
+	font-family: 'shadows_into_light_tworegular';
+	font-size: 30px;
+	
+	margin: 50px auto;
+	max-width: 800px;
+	
+	
+}
+
+#recovery_content .recovery_title{
+	font-family: 'Conv_Androgyne_TB';
+	text-shadow: -1px 0px 6px #03254C;
+	font-size: 30px;
+	color: #ffffff;
+	text-align: center;
+	
+	margin-top: 50px;
+	
+	
+}
+
+#recovery_content .recovery_subtitle{
+	color: #ffffff;
+	font-family: 'shadows_into_light_tworegular';
+	font-size: 20px;
+}
+
+#recovery_content label{
+	color: #ffffff;
+	font-family: 'shadows_into_light_tworegular';
+	font-size: 15px;
+}
+
+#recovery_content .recovery_div_ele{
+	margin: 0 100px 50px 100px;
+}
+
+#content_contacto {
+	background: url("../img/back_azul1.png") repeat scroll center bottom #002a84;
+	padding-bottom: 100px;
+}
+
+#contact_content{
+	background: url("../img/back_azul2.png") repeat scroll center bottom #002a84;
+	border: 3px solid #ffffff;
+	border-radius: 20px;
+	min-width: 300px;
+	
+	color: #ffffff;
+	font-family: 'shadows_into_light_tworegular';
+	font-size: 30px;
+	
+	margin: 0 auto;
+	max-width: 800px;
+	
+	
+}
+
+
+#contact_content .contact_title{
+	font-family: 'Conv_Androgyne_TB';
+	text-shadow: -1px 0px 6px #03254C;
+	font-size: 30px;
+	color: #ffffff;
+	text-align: center;
+	
+	margin: 50px 100px 0 100px;
+	
+	
+}
+
+#contact_content .contact_subtitle{
+	color: #ffffff;
+	font-family: 'shadows_into_light_tworegular';
+	font-size: 20px;
+	margin: 0 100px 0 100px;
+}
+
+#contact_content .label2{
+	font-size: 15px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#contact_content label{
+	color: #ffffff;
+	font-family: 'shadows_into_light_tworegular';
+	font-size: 15px;
+}
+
+#contact_content .contact_div_ele{
+	margin: 0 100px 50px 100px;
+}
+#contact_content .contacto_obligatorios{
+	margin: 0 100px 0 100px;
+	color: #ffffff;
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#contact_content .captcha {
+    float: left;
+}
+#contact_content .refresh_captcha {
+    float: left;
+    margin-left: 10px;
+}
+#contact_content .privacidad_modal {
+    color: #ffffff;
+    text-decoration: underline;
+}
+#contact_content  .btn_enviar{
+	float: right;
+}
+
+.menu_space{
+	padding-top: 64px;
+}
+
+#contenedor_superior.menu_space{
+	padding-top: 44px;
+}
+
+#videos_content{
+	background: url("../img/back_azul1.png") repeat scroll center bottom #002a84;
+	overflow: hidden;
+}
+
+#videos_content #video_title{
+	font-family: 'Conv_Androgyne_TB';
+	font-size: 25px;
+	color: #ffffff;
+	margin: 0 auto;
+	max-width: 800px;
+    padding: 0 30px;
+	text-shadow: -1px 0px 6px #03254C;
+	letter-spacing: 0.03em;
+}
+
+#videos_content #main_video{
+	width: 100%;
+	max-width: 800px;
+	margin:0px auto;
+	padding: 15px 30px 30px 30px;
+	position: relative;
+}
+
+#videos_content #video_frame{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: 1;
+}
+
+#videos_content video {
+	max-width: 100%;
+	height: auto;
+	z-index: 2;
+	box-shadow: 1px 0px 10px 0px #03254C;
+	
+	
+}
+
+#videos_content iframe,
+#videos_content embed,
+#videos_content object {
+	max-width: 100%;
+	z-index: 2;
+	box-shadow: 1px 0px 10px 0px #03254C;
+	border-radius: 15px;
+	
+	
+}
+#videos_content .video_thumb{
+	text-align: center;
+}
+#videos_content .ver_video{
+	display: block;
+	position: relative;
+}
+#videos_content .play_icon{
+	position: absolute; top:0; bottom:0; margin: auto; left:0; right: 0;
+}
+#videos_content .ver_video .video_thumb_img{
+	display: block;
+	max-width: 250px;
+	margin: 0 auto;
+	width: 90%;
+	box-shadow: 1px 0px 10px 0px #03254C;
+}
+#videos_content .video_thumb_title a{
+	color: #ffffff;
+}
+
+#videos_content .video_thumb_title{
+	text-align: center;
+	margin-top: 15px;
+
+	color: #ffffff;
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-shadow: -1px 0px 6px #03254C;
+	letter-spacing: 0.03em;
+}
+
+#videos_content #videos_carousel{
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+	max-width: 800px;
+}
+
+#videos_content #videos_carousel .owl-controls{
+	margin-top: -48px !important;
+}
+
+#videos_content #galletas_video {
+    left: -100px;
+    position: absolute;
+    top: 0;
+}
+
+#videos_content #tomate_utensilio {
+    bottom: 15px;
+    position: absolute;
+    right: -80px;
+}
+
+/* Products detail */
+
+h1#product-name {
+	font-family: "shadows_into_light_tworegular";
+	font-weight: normal;
+	font-size: 35px;
+	margin: 0 0 12px;
+	text-shadow: 1px 3px 6px #015;
+	letter-spacing: 0.03em;
+}
+
+h2.nutrition-facts-title {
+	font-family: "shadows_into_light_tworegular";
+	font-weight: normal;
+	font-size: 25px;
+	margin: 8px 0 12px;
+	letter-spacing: 0.03em;
+}
+
+.nutrition-facts-wrapper {
+	border-radius: 8px;
+	background: url("../img/back_azul3.jpg") repeat scroll center bottom #002a84;
+	overflow: hidden;
+	width: 100%;
+	
+	
+}
+
+.nutrition-facts-table-wrapper {
+	padding: 10px;
+}
+
+ul.nutrition-facts-servings {
+	background: url("../img/back_azul4.jpg") repeat scroll center bottom #002a84;
+	display: block;
+	padding: 8px 12px;
+}
+
+ul.nutrition-facts-servings li {
+	list-style: none;
+	display: block;
+}
+
+table#modal-nutrition-facts,
+table#nutrition-facts {
+	width: 100%;
+	font-size: 12px;
+}
+
+table#modal-nutrition-facts > thead > tr > th.description,
+table#nutrition-facts > thead > tr > th.description {
+	width: 55%;
+}
+
+table#modal-nutrition-facts > thead > tr > th.value,
+table#nutrition-facts > thead > tr > th.value {
+	font-weight: normal;
+	width: 45%;
+}
+
+#modal-nutrition-facts .level-0,
+#nutrition-facts .level-0 {
+	font-weight: bold;
+}
+
+#modal-nutrition-facts .level-0 > td.description,
+#nutrition-facts .level-0 > td.description {
+	padding-left: 8px;
+}
+
+#modal-nutrition-facts .level-1 > td.description,
+#nutrition-facts .level-1 > td.description {
+	padding-left: 24px;
+}
+
+#modal-nutrition-facts .level-2 > td.description,
+#nutrition-facts .level-2 > td.description {
+	padding-left: 40px;
+}
+
+#modal-nutrition-facts th.value,
+#modal-nutrition-facts td.value,
+#nutrition-facts th.value,
+#nutrition-facts td.value {
+	text-align: center;
+}
+
+.modal h2.nutrition-facts-title {
+	display: none;
+}
+
+#product-info-modal {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+#products-carousel{
+	width: 90%;
+	margin: 0 auto;
+}
+
+#products-carousel-mobile .owl-controls {
+	display: none !important;
+}
+
+#products-carousel .item {
+	cursor: pointer;
+	height: 155px;
+	width: 155px;
+	padding: 12px 0 0;
+	margin: 0 auto;
+}
+
+#products-carousel .item:hover,
+#products-carousel .item.selected {
+	background: url("../img/circulo_seleccionador.png") no-repeat center;
+	background-size:  auto 100%;
+	color: #ffcc46;
+}
+
+#products-carousel .item > img {
+	width: 75%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
+
+#products-carousel .item > label {
+	width: 100%;
+	height: auto;
+	text-align: center;
+	font-family: "shadows_into_light_tworegular";
+	font-size: 18px;
+	font-weight: normal;
+	letter-spacing: 0.03em;
+}
+
+#product-picture,
+#products-carousel-mobile .item > .product-src {
+	display: block;
+    margin: 0 auto;
+    max-width: 470px;
+    width: 100%;
+}
+
+#products-carousel-mobile .item > h1 {
+	font-family: "shadows_into_light_tworegular";
+	font-weight: normal;
+	font-size: 35px;
+	text-align: center;
+	margin: 0 0 12px;
+}
+
+#products-carousel-mobile .item{
+	position: relative;
+	min-height: 400px;
+}
+
+.info-nutri-controls{
+	position: absolute;
+	height: 85px;
+	bottom: -30px;
+	width: 300px;
+	left: 50%;
+	margin-left: -150px;
+}
+
+.info-nutri-a{
+	display: block;
+	background: url(../img/btn_info_nutrimental_mobile.png);
+	width: 200px;
+	height: 40px;
+	position: absolute;
+    right: 10px;
+    top: 0;
+}
+
+.info-nutri-a:hover{
+	background-position: 0 -40px;
+}
+
+.icn_mano{
+	left: 10px;
+    position: absolute;
+    top: -20px;
+}
+
+/* Recipe detail */
+.recipe-detail-left {
+    margin-bottom: 20px;
+}
+.recipe-detail-container {
+	background: url("../img/back_azul1.png") repeat scroll center bottom #002a84;
+}
+
+.recipe-detail-container > .container {
+	max-width: 940px;
+	min-height: 600px;
+}
+
+.recipe-main-photo {
+	overflow: hidden;
+	background: url("../img/back_recetas.png") repeat scroll 0 0 #f8f2da;
+	max-width: 320px;
+	border-radius: 8px;
+	
+	
+}
+
+.recipe-photo-socialbar {
+	width: 100%;
+	height: 53px;
+	position: relative;
+}
+
+.recipe-photo-socialbar .fb-share {
+	background: url("../img/icon_facebook.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+	width: 43px;
+	height: 43px;
+	margin: 4px;
+	float: left;
+	cursor: pointer;
+}
+
+.recipe-photo-socialbar .fb-share:hover {
+	background-position: 0 -43px;
+}
+
+.recipe-photo-socialbar .fav-recipe {
+	background: url("../img/icon_corazon.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+	width: 39px;
+	height: 35px;
+	margin: 9px;
+	float: right;
+	cursor: pointer;
+}
+
+.recipe-photo-socialbar .fav-recipe:hover {
+	background-position: 0 -35px;
+}
+
+.recipe-photo-socialbar .fav-recipe.active {
+	background-position: 0 -35px;
+}
+
+.recipe-photo-socialbar .fav-recipe.active:hover {
+	background-position: 0 0;
+}
+
+.recipe-photo-socialbar .receta_card_like{
+	position: relative;
+	float: right;
+	top: auto;
+	right: auto;
+	margin: 13px 9px;
+}
+
+.recipe-photo-socialbar .receta_card_compartir{
+	position: relative;
+	float: left;
+	top: auto;
+	left: auto;
+	margin: 9px;
+}
+
+.recipe-main-photo img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.recipe-time {
+	margin: 12px 0;
+	font-family: "shadows_into_light_tworegular";
+	font-size: 18px;
+	letter-spacing: 0.03em;
+	text-shadow: -1px 0px 6px #03254C;
+}
+
+.recipe-description > div {
+	overflow: hidden;
+	border-radius: 8px;
+	margin: 0 0 16px;
+	
+	
+}
+
+.recipe-description > div > h2 {
+	margin: 0px;
+	background: url("../img/back_azul4.jpg") repeat scroll center bottom #002a84;
+	display: block;
+	padding: 14px;
+	font-family: "shadows_into_light_tworegular";
+	font-weight: normal;
+	font-size: 22px;
+}
+
+.recipe-description > div > p {
+	margin: 0px;
+	background: url("../img/back_azul3.jpg") repeat scroll center bottom #002a84;
+	display: block;
+	padding: 14px;
+}
+
+h1.recipe-title {
+	font-family: "shadows_into_light_tworegular";
+	font-weight: normal;
+	font-size: 24px;
+	margin: 0 0 12px;
+	letter-spacing: 0.03em;
+}
+
+h2.recipe-more-photos {
+	font-family: "shadows_into_light_tworegular";
+	font-weight: normal;
+	font-size: 25px;
+	margin: 24px 0 12px;
+	text-align: center;	
+	letter-spacing: 0.03em;
+}
+
+.recipe-categories ul {
+	padding: 0;
+}
+
+.recipe-categories ul li {
+	display: inline-block;
+	text-align: center;
+	margin: 0 0 24px;
+}
+
+/* TODO */
+.recipe-categories ul li .category_img {
+	display: block;
+	width: 90%;
+	height: auto;
+	cursor: pointer;
+	margin: 0 auto;
+}
+
+.recipe-categories ul li label {
+	margin: 8px 0 0;
+	font-family: "Conv_Androgyne_TB";
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.recipe-categories ul li.selected,
+.recipe-categories ul li:hover {
+	color: #ffae33;
+}
+
+.recipe-categories ul li.selected:hover {
+	color: #ffffff;
+}
+
+.recipe-photos-carousel {
+	text-align: center;
+}
+
+/* Shadows */
+
+h1#product-name,
+h2.nutrition-facts-title,
+h1.recipe-title,
+.recipe-description > div > h2,
+h2.recipe-more-photos,
+.recipe-categories ul li label {
+	text-shadow: -1px 0px 6px #03254C;
+	
+	
+}
+
+.nutrition-facts-wrapper,
+.recipe-description > div,
+.recipe-main-photo {
+	box-shadow: 1px 0px 10px 0px #03254C;
+	
+	
+}
+
+/* Media queries */
+
+.menu-container{
+	position: relative;
+}
+
+#main_menu_button{
+	width: 44px;
+	height: 35px;
+	background: url(../img/btn_menu.png) no-repeat;
+	border:0;
+	margin-top: 25px;
+}
+
+.logged_in_menu_div{
+	
+}
+
+.logged_in_menu{
+	list-style: none;
+	
+	position: absolute; 
+	top: 60px;
+	right: 35px;
+}
+
+.logged_in_menu li{
+	float: left;
+	margin-left: 10px;
+}
+
+.logged_in_menu a{
+	color: #ffffff;
+    display: block;
+    float: left;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 13px;
+    line-height: 30px;
+    padding: 0;
+    text-decoration: none;
+    text-shadow: -1px 0px 6px #03254C;
+}
+
+.logged_in_menu a:hover{
+	text-decoration: underline;
+}
+
+.logged_in_menu .menu-dot{
+	color: #00ff00;
+    display: block;
+    float: left;
+    line-height: 30px;
+    padding: 0;
+    width: 15px;
+}
+
+#category_content{
+	background: url("../img/back_azul1.png") repeat scroll center bottom #002a84;
+}
+
+#category_content .ver_mas_content{
+	margin-bottom: 30px;
+}
+
+#category_content .recipe-categories, .recipe-detail-container .recipe-categories{
+	margin-bottom: 30px;
+}
+
+#category_content #recetas_wrapper{
+	margin-top: 30px;
+}
+
+.category_title_a{
+	color: #ffffff;
+	cursor: pointer;
+    font-family: "Conv_Androgyne_TB";
+    font-size: 20px;
+    margin: 8px 0 0;
+	text-shadow: -1px 0px 6px #03254C;
+	display: block;
+	
+	
+}
+
+.category_sel{
+	bottom: -30px;
+    display: none;
+    left: 50%;
+    margin-left: -14px;
+    position: absolute;
+}
+
+.category_title_a:hover .category_sel, .category_title_a.active .category_sel{
+	display: block;
+}
+
+.category_title_a:hover, .category_title_a.active{
+	color: #ffb503;
+}
+
+.breadcrumb{
+	background: none;
+    border-radius: 0;
+    list-style: outside none none;
+    margin-bottom: 20px;
+    padding: 8px 15px;
+	
+	font-family: "shadows_into_light_tworegular";
+	font-size: 15px;
+}
+
+.breadcrumb a{
+	color: #ffffff;
+}
+
+.breadcrumb > .active {
+    color: #ffb503;
+}
+
+.breadcrumb > li + li:before {
+     content: "\003E\0020";
+     color: #ffffff;
+}
+
+.recipe_picture img{
+	width: 100%;
+}
+
+#photos_carousel{
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+}
+
+#content_categories{
+	
+}
+
+#content_categories .recetas_titulo{
+	margin: 0;
+}
+
+.categories_text{
+	font-family: "shadows_into_light_tworegular";
+    font-size: 20px;
+    text-align: center;
+	line-height: 28px;
+	margin: 20px 0 40px 0;
+	letter-spacing: 0.03em;
+	text-shadow: -1px 0px 6px #03254C;
+}
+
+.categories_flecha_left, .categories_flecha_right{
+	position: absolute;
+	bottom: 20px;
+}
+
+.categories_flecha_left{
+	right: 20%;
+}
+
+.categories_flecha_right{
+	left: 20%;
+}
+
+.categories_img{
+	display: block;
+	margin: 0 auto;
+	max-width: 400px;
+    width: 100%;
+}
+
+.categories_title_a{
+	color: #ffffff;
+    cursor: pointer;
+    display: block;
+    font-family: "Conv_Androgyne_TB";
+    font-size: 30px;
+    margin: 8px 0 0;
+    text-shadow: -1px 0px 6px #03254C;
+	
+	text-align: center;
+	
+	
+}
+
+.categories_title_a:hover{
+	color: #ffb503;
+}
+
+.categories_category{
+	margin-bottom: 20px;
+}
+
+#categorias{
+	margin-bottom: 20px;
+}
+
+.categories_favoritas_title{
+	margin: 20px auto 30px;
+}
+
+#main-menu-responsive{
+	background: #2d5088;
+	font-family: "shadows_into_light_tworegular";
+	font-size: 18px;
+    line-height: 28px;
+	border:0;
+
+	box-shadow:3px 0px 10px #252525 inset;
+	letter-spacing: 0.03em;
+}
+
+#main-menu-responsive .main_menu_responsive_title{
+	color: #D7D8D2;
+	border-bottom: 2px solid #22293A;
+	padding: 10px 15px;
+	font-size: 32px;
+    line-height: 32px;
+	text-align: center;
+	display: block;
+}
+
+#main-menu-responsive a{
+	color: #ffffff;
+	border-bottom: 2px solid #22293A;
+	border-top: 2px solid #505769;
+}
+
+#main-menu-responsive a:hover{
+	background: #1d3356;
+}
+
+#main-menu-responsive .mmr-icon{
+	display: block;
+    float: left;
+    margin-right: 10px;
+}
+
+#main-menu-responsive .logout-icon{
+	background: url(../img/btn_iniciar_sesion.png);
+	width: 32px;
+	height: 35px;
+	margin-top: -3px;
+}
+
+#main-menu-responsive a:hover .logout-icon, 
+#main-menu-responsive a:active .logout-icon, 
+#main-menu-responsive a:focus .logout-icon{
+	background-position: 0 -35px;
+}
+
+#main-menu-responsive .arrow-icon{
+	background: url(../img/btn_menu_mobile.png);
+	width: 17px;
+	height: 29px;
+}
+
+#main-menu-responsive a:hover .arrow-icon,
+#main-menu-responsive a:active .arrow-icon,
+#main-menu-responsive a:focus .arrow-icon{
+	background-position: 0 -29px;
+}
+
+#main-menu-responsive .bullet-icon{
+	background: url(../img/btn2_menu_mobile.png);
+	height: 12px;
+    margin-top: 8px;
+    width: 11px;
+}
+
+#main-menu-responsive a:hover .bullet-icon,
+#main-menu-responsive a:active .bullet-icon,
+#main-menu-responsive a:focus .bullet-icon{
+	background-position: 0 -12px;
+}
+.cositos_flotantes{
+	position: relative;
+	width: 95%;
+	margin: 0 auto;
+}
+
+.cositos_flotantes .flotante{
+	display: block;
+    position: absolute;
+}
+
+#contenedor_medio{
+	overflow: hidden;
+}
+
+#contenedor_medio .hongo{
+	right: -171px;
+    top: 40px;
+}
+#contenedor_medio .hoja_sola{
+	right: -222px;
+    top: 150px;
+}
+#contenedor_medio .tomate{
+	right: -175px;
+    top: 274px;
+}
+#contenedor_medio .galleta{
+	left: -150px;
+	top: 50px;
+}
+#contenedor_medio .camaron{
+	left: -150px;
+	top: 250px;
+}
+
+#recetas_cositos_flotantes .flotante{
+	width: 150px;
+	margin: 0;
+}
+
+#recetas_cositos_flotantes p.flotante {
+    padding: 5px;
+	color: #c9f4f0;
+	font-family: "shadows_into_light_tworegular";
+	font-size: 17px;
+    line-height: 27px;
+	margin-top: 20px;
+}
+
+.is-loading {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-color: black;
+	background-image: url('../img/loading.gif');
+}
+
+.is-broken {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-image: url('../img/broken.png');
+	background-color: #be3730;
+}
+
+.is-loading img,
+.is-broken img {
+  opacity: 0;
+}
+
+.banner_openx img{
+	width: 100%;
+	height: auto;
+}
+
+@media (max-width: 1279px) {
+	.cositos_flotantes{
+		display: none;
+	}
+}
+
+@media (max-width: 991px) {
+	#login_modal,  #recover_modal{
+		margin-left: auto !important;
+		margin-right: auto !important;
+	}
+
+	.cont-close{
+		top: 5px;
+		right: 5px;
+	}
+	
+	#logo{
+		width: 250px;
+	}
+	
+	.menu-dot{
+		padding: 15px 0;
+	}
+}
+
+@media (max-width: 768px) {
+	.navbar-nav{
+		width: 100%;
+	}
+	
+	.modal_ingreso{
+		margin-bottom: 100px !important;
+	}
+	
+	.modal_ingreso .form_user_login_ele{
+		margin-left: 0;
+	}
+	.modal_ingreso #inisesele{
+		display:none;
+	}
+	.form_user_register_div{
+		margin: 20px 0;
+	}
+	.form_user_recover_div{
+		margin: 20px 0;
+	}
+	.modal_registro_titulo_2{
+		margin:0;
+	}
+	
+	#recovery_content .recovery_div_ele{
+		margin: 0 20px !important;
+	}
+	#recovery_content .btn_enviar{
+		margin: 0 auto;
+	}
+
+	.menu_space{
+		padding-top: 110px;
+	}
+	
+	#contenedor_superior.menu_space{
+		padding-top: 90px;
+	}
+	
+	#contact_content .contact_div_ele{
+		margin: 0 20px !important;
+	}
+	#contact_content .btn_enviar{
+		margin: 0 auto 20px auto;
+		float: none;
+	}
+	#contact_content .contact_title{
+		margin: 20px 20px;
+	}
+	#contact_content .contact_subtitle{
+		margin: 0 20px;
+	}
+	#contact_content .contacto_obligatorios{
+		margin: 0 20px;
+	}
+	
+	#logo{
+		margin-left: 5px;
+		margin-top: 10px;
+		width: 220px;
+	}
+	
+	#videos_content #main_video{
+		padding: 15px 0 0 0;
+	}
+	#videos_content #video_title{
+		font-size: 16px;
+		letter-spacing: 0.03em;
+	}
+	#videos_content iframe, #videos_content embed, #videos_content object{
+		border-radius: 0;
+	}
+	
+	#videos_content #galletas_video {
+		display: none;
+	}
+
+	#videos_content #tomate_utensilio {
+		display: none;
+	}
+	
+	#videos_content #videos_carousel{
+		width: 80%;
+	}
+	
+	.registrate_div{
+		bottom: -100px;
+	}
+	
+	.copy_legal{
+		font-size: 8px;
+		padding-right: 10px;
+		text-align: right;
+	}
+	
+	.navbar {
+		background: url("../img/back_mantel.png") no-repeat scroll center 70% #002a84;
+		border-bottom: 5px solid #ffffff;
+		margin-bottom: 20px;
+		min-height: 90px;
+	}
+	
+	#contenedor_superior{
+		padding-bottom: 0;
+	}
+	
+	#contenedor_superior .container{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+	#contenedor_medio .cargar_highlight{
+		margin-left: 0;
+		font-size: 16px;
+	}
+	#contenedor_medio .cargar_favorites{
+		margin-right: 0;
+		font-size: 16px;
+	}
+	#videos_content #video_frame{
+		display: none;
+	}
+	
+	#header {
+		position: absolute;
+		width: 100%;
+		min-width: 320px;
+	}
+	#contenedor_medio .recetas_titulo_2{
+		margin: 0;
+	}
+	
+	.margen_medio{
+		height: 25px;
+		top: 5px;
+	}
+	
+	#destacadas_carousel{
+		width: 80%;
+	}
+	
+	#photos_carousel{
+		width: 80%;
+	}
+	
+	#products-carousel{
+		width: 80%;
+	}
+	
+	#footer{
+		 line-height: 16px;
+	}
+	
+	#division_superior{
+		height: 10px;
+	}
+	
+	h1#product-name{
+		text-align: center;
+	}
+	
+	.categories_text{
+		font-size: 18px;
+	}
+	
+	#photos_carousel .picture_ribbon{
+		width: 60px;
+		right: -5px;
+		top: -4px;
+	}
+}
+
+@media (max-width: 515px) {
+	.product-selector {
+		display: none;
+	}
+}
+
+/* Medidas diferentes a las estadar para la lona */
+@media (min-width: 1200px) {
+  .container {
+    width: 990px;
+  }
+}

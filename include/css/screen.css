@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'shadows_into_light_tworegular';
+    src: url('../fonts/shadowsintolighttwo-regular-webfont.eot');
+    src: url('../fonts/shadowsintolighttwo-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/shadowsintolighttwo-regular-webfont.woff2') format('woff2'),
+         url('../fonts/shadowsintolighttwo-regular-webfont.woff') format('woff'),
+         url('../fonts/shadowsintolighttwo-regular-webfont.ttf') format('truetype'),
+         url('../fonts/shadowsintolighttwo-regular-webfont.svg#shadows_into_light_tworegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body{
+	margin:0px;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+	min-width: 320px;
+	background: url("../img/back_azul1.png") repeat scroll center bottom #002a84;
+	color: #ffffff;
+}
+
+.screen_wraper{
+	margin-top: 50px;
+	text-align: center;
+}
+
+.screen_wraper #screen_img{
+	display: block;
+	margin: 0 auto;
+	max-width: 386px;
+	width: 100%;
+}
+
+.screen_wraper .screen_text{
+	font-family: 'shadows_into_light_tworegular';
+	text-align: center;
+	color: #ffffff;
+	font-size: 32px;
+}
+
+.btn_regresar{
+	background: url("../img/btn_regresar.png") no-repeat transparent;
+	width: 122px;
+	height: 28px;
+	display: block;
+	border:0;
+}
+.btn_regresar:hover{
+	background-position: 0px -28px;
+}
+.screen_wraper .btn_regresar{
+	margin: 0 auto;
+}
+.screen_wraper #screen_logo{
+	margin-top: 20px;
+	max-width: 297px;
+	width: 100%;
+}
+
+@media (max-width: 768px) {
+	.screen_wraper{
+		margin-top: 0;
+	}
+}

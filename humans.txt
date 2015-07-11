@@ -1,0 +1,12 @@
+# humanstxt.org/
+
+# TEAM
+
+    Jack - Developer - mrjack.org
+	
+# THANKS
+
+Powered by:
+    HTML5, CSS3, Boostrap
+    jQuery, Modernizr
+	CodeIgniter
