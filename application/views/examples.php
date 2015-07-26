@@ -1,5 +1,5 @@
 <section id="home" class="container">
-	<h1>Codeigniter Tuned - PEPSICO - MrJack</h1>
+	<h1>Codeigniter Tuned</h1>
 	
 	<?if(!empty($logged_in)){?>
 		<hr/>
